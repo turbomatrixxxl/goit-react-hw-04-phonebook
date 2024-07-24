@@ -1,0 +1,49 @@
+.field {
+  position: relative;
+  margin: 0;
+  /* width: 60%;
+  max-width: 488px; */
+}
+
+.input {
+  border: 1px solid #757575;
+  color: #010101;
+  display: block;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  flex-shrink: 0;
+  height: 48px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  padding: 0 16px;
+}
+
+.input ~ label {
+  color: #757575;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+
+.input:focus {
+  border: 1px solid #424242;
+  outline: none;
+  /* padding: 12px 24px; */
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  color: #424242;
+  /* font-size: 12px; */
+  left: 0;
+  top: -24px;
+}
