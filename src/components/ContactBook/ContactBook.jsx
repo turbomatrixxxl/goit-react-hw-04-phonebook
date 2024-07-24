@@ -165,7 +165,15 @@ export default function ContactBook() {
         required={false}
         handleChange={handleSearchChange}
       />
-      <h2>Contacts</h2>
+      <div>
+        <h2 style={{ margin: '10px 0 20px' }}>Contacts</h2>
+        <p style={{ fontSize: '24px', margin: '0' }}>
+          Total Contacts: {contacts.length}
+        </p>
+        <p style={{ fontSize: '24px', margin: '0' }}>
+          Contacts found: {getContactsByName.length}
+        </p>
+      </div>
       <ul className={styles.contactList}>
         {getContactsByName.map(contact => {
           return (
